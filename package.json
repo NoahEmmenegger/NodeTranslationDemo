@@ -1,12 +1,12 @@
 {
-  "name": "test",
+  "name": "nodetranslationdemo",
   "version": "1.0.0",
-  "description": "",
+  "description": "A small demo to use translations in Node.js",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Noah Emmenegger",
   "license": "ISC"
 }
