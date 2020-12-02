@@ -1,7 +1,7 @@
 const translations = require('../translation/translations.json')
 
 module.exports = {
-    translate(key, lan) {
+    translate(key, lan, variables = {}) {
         if (!key || !lan) {
             return "MISSING_KEY_OR_LAN";
         }
@@ -12,6 +12,12 @@ module.exports = {
         let value = keyValue[lan];
         if (!value) {
             return "MISSING_TRANSLATION_FOR_LANGUAGE";
+        }
+
+        if (Object.keys(variables).length > 0) {
+            Object.keys(variables).forEach(variable => {
+                value = value.replace(`{${variable}}`, variables[variable])
+            })
         }
 
         return value;

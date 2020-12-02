@@ -6,5 +6,9 @@
     "code": {
         "de": "programmieren",
         "en": "code"
+    },
+    "placeholders": {
+        "de": "Hallo {name}, deine Lieblingsfarbe ist {color}, richtig?",
+        "en": "Hello {name}, your favorit color is {color}, right?"
     }
 }
